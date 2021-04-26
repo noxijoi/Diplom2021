@@ -6,9 +6,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
+<VBox xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.diploma.demo.view.MainController"
             prefHeight="400.0" prefWidth="600.0">
+    <TabPane tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="mainPageTab" text="Главная">
+                <fx:include source="main-page-tab.fxml"/>
+            </Tab>
+            <Tab fx:id="mailPageTab" text="Корреспонденция">
+                <fx:include source="mail-page-tab.fxml"/>
+            </Tab>
+            <Tab fx:id="counterPageTab" text="Контроль датчиков">
+                <fx:include source="counter-page-tab.fxml"/>
+            </Tab>
+        </tabs>
 
-</AnchorPane>
+    </TabPane>
+</VBox>

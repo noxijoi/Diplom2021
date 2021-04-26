@@ -1,0 +1,38 @@
+logging:
+  level:
+    liquibase: INFO
+    org.springframework.web: ERROR
+spring:
+  profiles:
+    active: dev
+  liquibase:
+    change-log: classpath:/db/changelog-master.yml
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: create
+    properties:
+      javax:
+        persistence:
+          schema-generation:
+            scripts:
+              action: update
+              create-target: update.sql
+              create-spurce: metadata
+      hibernate:
+        hbm2ddl:
+          auto: update
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        envers:
+          default_schema: app_audit
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/app
+    username: app_dev
+    password: njiokm
+  main:
+    allow-bean-definition-overriding: true
+

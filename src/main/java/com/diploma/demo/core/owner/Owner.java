@@ -31,7 +31,7 @@ public class Owner {
 
     //дата рождения(госрегистрации юрлица)
     @Column(name="registration_date")
-    private LocalDate birthDate;
+    private LocalDate registrationDate;
 
     //тип документа, удостоверяющего личность(юрлица)
     @Column(name ="doc_type")

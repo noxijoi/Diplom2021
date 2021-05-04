@@ -3,12 +3,14 @@ package com.diploma.demo.core.landplot;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 @Embeddable
 @Data
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class Address {
@@ -27,4 +29,6 @@ public class Address {
 
     @Column(name="apartment_n")
     private Long apartmentN;
+
+
 }

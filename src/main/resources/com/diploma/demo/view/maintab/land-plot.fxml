@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.diploma.demo.view.landplot.LandPlotController">
+
+    <GridPane >
+        <Label text="Кадастровый номер" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="cadastralNumberLabel" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Label text="Адрес" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="addressLabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Label text="Площадь" GridPane.columnIndex="0" GridPane.rowIndex="2">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="surfaceLabel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Label text="Категория" GridPane.columnIndex="0" GridPane.rowIndex="3">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="categoryLabel" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Label text="Целевое назначение" GridPane.columnIndex="0" GridPane.rowIndex="4">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="intendedUseLabel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+        <Label text="Назначение по классификации" GridPane.columnIndex="0" GridPane.rowIndex="5">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="landPlotPurposeLabel" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+        <Label text="Актуальные отметки" GridPane.columnIndex="0" GridPane.rowIndex="6">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="currentMarksLabel" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+        <Label text="Примечания" GridPane.columnIndex="0" GridPane.rowIndex="7">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="notesLabel" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+        <ListView fx:id="restrictionListView" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="8" />
+        <ListView fx:id="contractListView" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="9" />
+        <ListView fx:id="registrationListView" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="9" />
+    </GridPane>
+
+</VBox>

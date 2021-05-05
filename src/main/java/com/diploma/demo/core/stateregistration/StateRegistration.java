@@ -2,6 +2,7 @@ package com.diploma.demo.core.stateregistration;
 
 import com.diploma.demo.core.landplot.LandPlot;
 import com.diploma.demo.core.owner.Owner;
+import com.diploma.demo.core.ownership.Ownership;
 import com.diploma.demo.core.rightofuse.RightOfUse;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -39,6 +40,10 @@ public class StateRegistration {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="owner_id")
     private Owner owner;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="ownership_id")
+    private Ownership ownership;
 
 
 }

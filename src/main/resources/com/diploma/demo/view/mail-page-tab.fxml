@@ -8,8 +8,7 @@
 
 <GridPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.diploma.demo.view.MailController"
-            prefHeight="400.0" prefWidth="600.0">
+            fx:controller="com.diploma.demo.view.MailController">
     <Button text="Входящие" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
     <Button text="Исходящие" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
 </GridPane>

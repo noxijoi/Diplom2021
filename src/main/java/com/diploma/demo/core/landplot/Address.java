@@ -15,20 +15,29 @@ import javax.persistence.Embeddable;
 @AllArgsConstructor
 public class Address {
 
-    @Column(name="region")
+    @Column(name = "region")
     private String region;
 
     @Column(name = "city")
     private String city;
 
-    @Column(name ="street")
+    @Column(name = "street")
     private String street;
 
-    @Column(name="home_number")
+    @Column(name = "home_number")
     private String homeNumber;
 
-    @Column(name="apartment_n")
+    @Column(name = "apartment_n")
     private Long apartmentN;
 
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        if (region != null) sb.append(region).append(" ");
+        if (city != null) sb.append("г.").append(city).append(" ");
+        if (street != null) sb.append("ул.").append(street).append(" ");
+        if (homeNumber != null) sb.append("д.").append(homeNumber).append(" ");
+        if (apartmentN != null) sb.append("кв").append(apartmentN).append(" ");
+        return sb.toString();
+    }
 
 }
